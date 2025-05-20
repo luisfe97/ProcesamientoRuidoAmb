@@ -15,7 +15,8 @@ def install_dependencies():
         'scipy',
         'openpyxl',
         'xlsxwriter',
-        'matplotlib',  # Útil para visualizaciones si se necesitan
+        'matplotlib',
+        'PyQt5',  # Útil para visualizaciones si se necesitan
     ]
     
     # Verificar pip
