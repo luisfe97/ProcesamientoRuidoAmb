@@ -9,7 +9,9 @@ El proyecto está organizado en una estructura modular:
 ```
 proyecto/
 │
-├── main.py                      # Script principal que ejecuta todo el proceso
+├── main.py
+├── run_gui.py                        # Script principal que ejecuta todo el proceso
+├── App.bat 
 │
 ├── config/                      # Scripts de configuración
 │   ├── setup.py                 # Script para crear estructura de carpetas
@@ -54,20 +56,18 @@ proyecto/
 1. Clonar el repositorio
 2. Instalar las dependencias:
    ```
-   pip install pandas numpy scipy openpyxl xlsxwriter
+   cd config
+   python install_dependencies.py 
    ```
-3. Ejecutar `setup.py` para crear la estructura de carpetas:
-   ```
-   python setup.py
-   ```
-
 ## Uso
 
 1. Coloca el archivo `Met_Mar.xlsx` en la carpeta raíz del proyecto
 2. Asegúrate de tener el archivo `Plantilla_Macro.xlsx` en la carpeta raíz
 3. Ejecuta el script principal:
    ```
-   python main.py
+   python run_gui.py
+   o
+   run App.bat
    ```
 4. Los resultados se guardarán en la carpeta `PTOS_salida`
 
